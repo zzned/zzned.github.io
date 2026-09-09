@@ -3,78 +3,78 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Demonios Taller Automotriz | Aguascalientes</title>
-<meta name="description" content="Taller automotriz en Aguascalientes. Presupuesto desglosado antes de empezar, evidencia del trabajo realizado y seguimiento después de la entrega.">
+<title>Demonios · Servicio Automotriz y Performance | Aguascalientes</title>
+<meta name="description" content="Taller automotriz y venta de autos en Aguascalientes. Presupuesto desglosado antes de empezar, evidencia del trabajo realizado y seguimiento después de la entrega.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#E6E4DE;
-    --paper-2:#DCD9D1;
-    --ink:#1B1D1C;
+    --ink:#191B1A;
+    --ink-2:#212423;
+    --paper:#EDEBE5;
+    --card:#F3F2EE;
+    --dim:#9BA39F;
     --steel:#5C6461;
     --stamp:#C0231D;
+    --stamp-lt:#E8453A;
     --wa:#25D366;
-    --rule:rgba(27,29,28,.18);
+    --rule:rgba(237,235,229,.16);
+    --rule-lt:rgba(25,27,26,.18);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
   body{
-    background:var(--paper);
-    color:var(--ink);
+    background:var(--ink);
+    color:var(--paper);
     font-family:'Barlow',system-ui,sans-serif;
-    font-size:17px;
-    line-height:1.55;
+    font-size:17px;line-height:1.55;
     -webkit-font-smoothing:antialiased;
   }
   a{color:inherit}
-  :focus-visible{outline:3px solid var(--stamp);outline-offset:3px}
+  :focus-visible{outline:3px solid var(--stamp-lt);outline-offset:3px}
   .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 22px}
-  h1,h2,h3,.mark{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.01em;line-height:1.08}
+  h1,h2,h3{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.01em;line-height:1.08}
 
-  /* ---------- top bar ---------- */
+  /* barra superior, blanca para que el logo entre completo */
   .bar{
     position:sticky;top:0;z-index:50;
-    background:var(--ink);color:var(--paper);
+    background:#FFFFFF;
     border-bottom:3px solid var(--stamp);
   }
-  .bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:11px;padding-bottom:11px}
-  .mark{font-size:23px;font-weight:700;letter-spacing:.06em}
-  .mark span{color:var(--stamp)}
+  .bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:9px;padding-bottom:9px}
+  .logo{display:block;height:46px;width:auto}
+  @media (max-width:520px){.logo{height:42px}}
   .bar-cta{
     font-family:'Barlow',sans-serif;font-weight:600;font-size:15px;
     background:var(--wa);color:#08320f;text-decoration:none;
     padding:9px 15px;border-radius:3px;white-space:nowrap;
   }
 
-  /* ---------- hero ---------- */
+  /* portada */
   .hero{padding:52px 0 40px}
-  .hero h1{font-size:clamp(38px,9vw,72px);font-weight:700;text-transform:none;max-width:15ch}
-  .hero .sub{
-    margin-top:20px;max-width:44ch;font-size:19px;color:var(--steel);
-  }
+  .hero h1{font-size:clamp(38px,9vw,72px);font-weight:700;max-width:15ch;color:var(--paper)}
+  .hero .sub{margin-top:20px;max-width:44ch;font-size:19px;color:var(--dim)}
   .rating{
-    display:flex;align-items:baseline;gap:10px;
-    margin-top:26px;padding-top:16px;border-top:1px solid var(--rule);
-    max-width:44ch;
+    display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;
+    margin-top:26px;padding-top:16px;border-top:1px solid var(--rule);max-width:44ch;
   }
-  .rating b{font-family:'Oswald',sans-serif;font-size:30px;font-weight:700}
-  .rating .stars{color:var(--stamp);letter-spacing:2px;font-size:15px}
-  .rating small{color:var(--steel);font-size:15px}
+  .rating b{font-family:'Oswald',sans-serif;font-size:30px;font-weight:700;color:var(--paper)}
+  .rating .stars{color:var(--stamp-lt);letter-spacing:2px;font-size:15px}
+  .rating small{color:var(--dim);font-size:15px}
   .hero-cta{
     display:inline-block;margin-top:26px;
-    background:var(--stamp);color:var(--paper);text-decoration:none;
+    background:var(--stamp);color:#FFFFFF;text-decoration:none;
     font-family:'Oswald',sans-serif;font-size:19px;font-weight:600;letter-spacing:.03em;
     padding:15px 28px;border-radius:3px;
   }
 
-  /* ---------- work order ---------- */
+  /* tarjeta del presupuesto: se queda clara a proposito */
   .order{
-    margin:44px 0 0;background:#F3F2EE;
-    border:1px solid var(--rule);border-top:5px solid var(--ink);
-    padding:26px 22px;position:relative;
+    margin:44px 0 0;background:var(--card);color:#191B1A;
+    border-top:5px solid var(--stamp);
+    padding:26px 22px;
   }
   .order-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
   .order h2{font-size:23px}
@@ -84,60 +84,65 @@
     color:var(--stamp);border:2px solid var(--stamp);border-radius:2px;
     padding:5px 9px;transform:rotate(-4deg);white-space:nowrap;
   }
-  .lines{margin-top:22px;border-top:1px solid var(--rule)}
-  .line{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--rule);align-items:flex-start}
+  .lines{margin-top:22px;border-top:1px solid var(--rule-lt)}
+  .line{display:flex;gap:14px;padding:13px 0;border-bottom:1px solid var(--rule-lt);align-items:flex-start}
   .line .n{font-family:'Oswald',sans-serif;color:var(--stamp);font-weight:700;font-size:15px;min-width:22px}
   .line h3{font-size:18px;font-weight:500}
   .line p{font-size:15px;color:var(--steel);margin-top:2px}
   .order-note{margin-top:18px;font-size:15px;color:var(--steel)}
 
-  /* ---------- sections ---------- */
+  /* secciones */
   section{padding:52px 0}
-  .sec-title{font-size:clamp(27px,6vw,40px);font-weight:700;max-width:20ch}
-  .sec-intro{margin-top:12px;max-width:52ch;color:var(--steel);font-size:18px}
+  .sec-title{font-size:clamp(27px,6vw,40px);font-weight:700;max-width:20ch;color:var(--paper)}
+  .sec-intro{margin-top:12px;max-width:52ch;color:var(--dim);font-size:18px}
 
-  .services{border-top:2px solid var(--ink);margin-top:26px}
-  .svc{
-    display:flex;gap:18px;align-items:baseline;
-    padding:17px 0;border-bottom:1px solid var(--rule);
-  }
-  .svc h3{font-size:19px;font-weight:500;min-width:190px;flex:0 0 auto}
-  .svc p{font-size:16px;color:var(--steel)}
+  .services{border-top:2px solid var(--stamp);margin-top:26px}
+  .svc{display:flex;gap:18px;align-items:baseline;padding:17px 0;border-bottom:1px solid var(--rule)}
+  .svc h3{font-size:19px;font-weight:500;min-width:190px;flex:0 0 auto;color:var(--paper)}
+  .svc p{font-size:16px;color:var(--dim)}
   @media (max-width:560px){.svc{display:block}.svc p{margin-top:3px}}
 
-  /* ---------- gallery ---------- */
+  /* venta de autos */
+  .autos{background:var(--ink-2);border-left:4px solid var(--stamp);padding:32px 26px;margin-top:34px}
+  .autos h2{font-size:clamp(25px,5.5vw,34px);font-weight:700;max-width:22ch;color:var(--paper)}
+  .autos p{margin-top:14px;max-width:54ch;color:var(--dim);font-size:18px}
+  .autos-cta{
+    display:inline-block;margin-top:22px;background:var(--wa);color:#08320f;text-decoration:none;
+    font-family:'Oswald',sans-serif;font-size:18px;font-weight:600;letter-spacing:.03em;
+    padding:13px 24px;border-radius:3px;
+  }
+
+  /* galeria */
   .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:26px}
   @media (min-width:700px){.gal{grid-template-columns:repeat(4,1fr);gap:12px}}
   .shot{
-    aspect-ratio:1/1;background:var(--paper-2);
-    border:1px solid var(--rule);
+    aspect-ratio:1/1;background:var(--ink-2);border:1px solid var(--rule);
     display:flex;align-items:center;justify-content:center;
-    color:var(--steel);font-size:14px;text-align:center;padding:14px;
+    color:var(--dim);font-size:14px;text-align:center;padding:14px;
+    object-fit:cover;
   }
 
-  /* ---------- visit ---------- */
-  .visit{background:var(--ink);color:var(--paper)}
-  .visit .sec-title{color:var(--paper)}
+  /* visita */
+  .visit{border-top:1px solid var(--rule);background:var(--ink-2)}
   .visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:30px}
   @media (max-width:660px){.visit-grid{grid-template-columns:1fr;gap:26px}}
-  .visit h3{font-size:16px;font-weight:500;color:var(--stamp);letter-spacing:.04em;margin-bottom:9px}
+  .visit h3{font-size:16px;font-weight:500;color:var(--stamp-lt);letter-spacing:.04em;margin-bottom:9px}
   .visit p,.visit a{font-size:17px;line-height:1.75;color:var(--paper);text-decoration:none}
-  .visit .row{display:flex;justify-content:space-between;max-width:290px;border-bottom:1px solid rgba(230,228,222,.16);padding:5px 0}
+  .visit .row{display:flex;justify-content:space-between;max-width:290px;border-bottom:1px solid var(--rule);padding:5px 0}
   .visit a.visit-cta{
     display:inline-block;margin-top:30px;background:var(--wa);color:#08320f;
     font-family:'Oswald',sans-serif;font-size:19px;font-weight:600;letter-spacing:.03em;
     padding:15px 28px;border-radius:3px;text-decoration:none;
   }
 
-  footer{padding:26px 0 96px;font-size:14px;color:var(--steel);border-top:1px solid var(--rule)}
+  footer{padding:26px 0 96px;font-size:14px;color:var(--dim);border-top:1px solid var(--rule)}
 
-  /* ---------- floating whatsapp ---------- */
   .float{
     position:fixed;right:16px;bottom:16px;z-index:60;
     background:var(--wa);color:#08320f;text-decoration:none;
     font-family:'Oswald',sans-serif;font-weight:600;font-size:16px;
     padding:14px 20px;border-radius:40px;
-    box-shadow:0 6px 20px rgba(27,29,28,.28);
+    box-shadow:0 6px 22px rgba(0,0,0,.45);
   }
   @media (max-width:420px){.float{font-size:15px;padding:12px 18px;right:12px;bottom:12px}}
 </style>
@@ -146,7 +151,7 @@
 
 <div class="bar">
   <div class="wrap">
-    <div class="mark">DEMONIOS<span>.</span></div>
+    <img class="logo" src="img/logo.png" alt="Demonios · Servicio Automotriz y Performance">
     <a class="bar-cta" href="https://wa.me/524491201267?text=Hola%2C%20quiero%20agendar%20una%20cita%20para%20mi%20auto." target="_blank" rel="noopener">WhatsApp</a>
   </div>
 </div>
@@ -154,7 +159,7 @@
 <header class="hero">
   <div class="wrap">
     <h1>Sabes qué se le va a hacer a tu coche antes de dejarlo.</h1>
-    <p class="sub">Taller automotriz en Aguascalientes. Presupuesto desglosado antes de empezar, evidencia del trabajo hecho y seguimiento después de la entrega.</p>
+    <p class="sub">Servicio automotriz y performance en Aguascalientes. Presupuesto desglosado antes de empezar, evidencia del trabajo hecho y seguimiento después de la entrega.</p>
 
     <div class="rating">
       <b>4.9</b>
@@ -176,31 +181,19 @@
       <div class="lines">
         <div class="line">
           <span class="n">1</span>
-          <div>
-            <h3>Diagnóstico</h3>
-            <p>Qué falla, por qué falla y qué pasa si se deja así.</p>
-          </div>
+          <div><h3>Diagnóstico</h3><p>Qué falla, por qué falla y qué pasa si se deja así.</p></div>
         </div>
         <div class="line">
           <span class="n">2</span>
-          <div>
-            <h3>Refacciones, con opciones</h3>
-            <p>Costo por calidad de refacción. Tú decides cuál va.</p>
-          </div>
+          <div><h3>Refacciones, con opciones</h3><p>Costo por calidad de refacción. Tú decides cuál va.</p></div>
         </div>
         <div class="line">
           <span class="n">3</span>
-          <div>
-            <h3>Mano de obra</h3>
-            <p>Desglosada por trabajo, no como una sola cifra.</p>
-          </div>
+          <div><h3>Mano de obra</h3><p>Desglosada por trabajo, no como una sola cifra.</p></div>
         </div>
         <div class="line">
           <span class="n">4</span>
-          <div>
-            <h3>Tiempo estimado</h3>
-            <p>Cuándo puedes pasar por tu auto.</p>
-          </div>
+          <div><h3>Tiempo estimado</h3><p>Cuándo puedes pasar por tu auto.</p></div>
         </div>
       </div>
 
@@ -220,7 +213,13 @@
       <div class="svc"><h3>Frenos y suspensión</h3><p>Balatas, discos, amortiguadores y alineación.</p></div>
       <div class="svc"><h3>Motor y transmisión</h3><p>Reparación mayor, distribución, clutch y fugas.</p></div>
       <div class="svc"><h3>Sistema eléctrico</h3><p>Alternador, marcha, sensores y fallas intermitentes.</p></div>
-      <div class="svc"><h3>Alto rendimiento</h3><p>Preparación, admisión, escape y puesta a punto.</p></div>
+      <div class="svc"><h3>Performance</h3><p>Preparación, admisión, escape, turbo y puesta a punto.</p></div>
+    </div>
+
+    <div class="autos">
+      <h2>También vendemos autos, revisados por nuestro propio taller</h2>
+      <p>Cada unidad que ponemos a la venta pasa por el mismo taller que 426 clientes calificaron con 4.9. Escríbenos y te decimos qué tenemos disponible.</p>
+      <a class="autos-cta" href="https://wa.me/524491201267?text=Hola%2C%20me%20interesa%20saber%20qu%C3%A9%20autos%20tienen%20disponibles." target="_blank" rel="noopener">Ver disponibilidad</a>
     </div>
   </div>
 </section>
@@ -260,7 +259,7 @@
 </section>
 
 <footer>
-  <div class="wrap">Demonios Taller Automotriz · Aguascalientes, Ags.</div>
+  <div class="wrap">Demonios · Servicio Automotriz y Performance · Aguascalientes, Ags.</div>
 </footer>
 
 <a class="float" href="https://wa.me/524491201267?text=Hola%2C%20quiero%20agendar%20una%20cita%20para%20mi%20auto." target="_blank" rel="noopener">Agendar cita</a>
