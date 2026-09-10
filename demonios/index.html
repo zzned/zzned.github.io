@@ -102,6 +102,18 @@
   .svc p{font-size:16px;color:var(--dim)}
   @media (max-width:560px){.svc{display:block}.svc p{margin-top:3px}}
 
+  /* servicio destacado */
+  .unico{
+    background:var(--ink-2);border-left:4px solid var(--stamp);
+    padding:26px;margin-top:30px;
+  }
+  .unico .tag{
+    font-family:'Oswald',sans-serif;font-size:13px;font-weight:700;
+    letter-spacing:.1em;color:var(--stamp-lt);display:block;margin-bottom:8px;
+  }
+  .unico h3{font-size:clamp(21px,4.6vw,27px);font-weight:700;color:var(--paper);max-width:24ch}
+  .unico p{margin-top:11px;max-width:52ch;color:var(--dim);font-size:17px}
+
   /* venta de autos */
   .autos{background:var(--ink-2);border-left:4px solid var(--stamp);padding:32px 26px;margin-top:34px}
   .autos h2{font-size:clamp(25px,5.5vw,34px);font-weight:700;max-width:22ch;color:var(--paper)}
@@ -209,15 +221,22 @@
 <section>
   <div class="wrap">
     <h2 class="sec-title">Servicios</h2>
-    <p class="sec-intro">Mantenimiento, reparación y preparación de alto rendimiento.</p>
+    <p class="sec-intro">Taller multimarca. Todos nuestros servicios tienen garantía.</p>
 
     <div class="services">
-      <div class="svc"><h3>Diagnóstico</h3><p>Escaneo computarizado y revisión física antes de cualquier presupuesto.</p></div>
-      <div class="svc"><h3>Servicio y afinación</h3><p>Aceite, filtros, bujías y revisión de puntos de desgaste.</p></div>
-      <div class="svc"><h3>Frenos y suspensión</h3><p>Balatas, discos, amortiguadores y alineación.</p></div>
-      <div class="svc"><h3>Motor y transmisión</h3><p>Reparación mayor, distribución, clutch y fugas.</p></div>
-      <div class="svc"><h3>Sistema eléctrico</h3><p>Alternador, marcha, sensores y fallas intermitentes.</p></div>
-      <div class="svc"><h3>Performance</h3><p>Preparación, admisión, escape, turbo y puesta a punto.</p></div>
+      <div class="svc"><h3>Diagnóstico</h3><p>Escaneo gratis, diagnóstico general y detección de fallas eléctricas.</p></div>
+      <div class="svc"><h3>Servicio de motor</h3><p>Servicio mayor, kit de distribución, calentamientos, fugas de aceite y anticongelante.</p></div>
+      <div class="svc"><h3>Frenos y suspensión</h3><p>Frenos, cambio de líquido, amortiguadores y ruidos en cabina.</p></div>
+      <div class="svc"><h3>Inyección y consumo</h3><p>Limpieza de inyectores, descarbonización de cilindros y corrección de consumo de combustible.</p></div>
+      <div class="svc"><h3>Transmisión y clutch</h3><p>Servicio de transmisión y reemplazo de clutch.</p></div>
+      <div class="svc"><h3>Aire y refrigeración</h3><p>Recarga de A/C y limpieza del sistema de refrigeración.</p></div>
+      <div class="svc"><h3>Performance</h3><p>Reprogramaciones de potencia, gobernadores y desgobernadores de velocidad, kit y recarga de nitro, metanol y modificaciones mecánicas.</p></div>
+    </div>
+
+    <div class="unico">
+      <span class="tag">SERVICIO ÚNICO EN MÉXICO</span>
+      <h3>Simulador de terreno para detectar ruidos</h3>
+      <p>Reproducimos las condiciones del camino dentro del taller para encontrar ruidos en suspensión, carrocería y cabina. Si un ruido solo aparece manejando, aquí lo localizamos.</p>
     </div>
 
     <div class="autos">
@@ -236,22 +255,22 @@
       <figure class="pair">
         <img class="shot" src="img/1.jpg" alt="Jetta gris en el taller Demonios">
         <img class="shot" src="img/5.jpg" alt="Jetta durante la reparación">
-        <figcaption><strong>Jetta</strong> con falla de propulsión. <Br>El cuerpo de aceleración estaba dañado; se reemplazó y se le hizo servicio preventivo de motor.</figcaption>
+        <figcaption><strong>Jetta</strong> con falla de propulsión.<br>El cuerpo de aceleración estaba dañado; se reemplazó y se le hizo servicio preventivo de motor.</figcaption>
       </figure>
       <figure class="pair">
         <img class="shot" src="img/2.jpg" alt="Subaru BRZ rojo terminado en Demonios">
         <img class="shot" src="img/6.jpg" alt="Subaru BRZ durante el trabajo">
-        <figcaption><strong>Subaru BRZ</strong>, se realizo servicio de transmisión, frenos nuevos, servicio de motor y reemplazo de líquido de frenos.</figcaption>
+        <figcaption><strong>Subaru BRZ</strong> con servicio de transmisión.<br>Se le pusieron frenos nuevos, se reemplazó el líquido de frenos y se le hizo servicio de motor.</figcaption>
       </figure>
       <figure class="pair">
         <img class="shot" src="img/3.jpg" alt="Ferrari Roma en el taller Demonios">
         <img class="shot" src="img/7.jpg" alt="Ferrari Roma durante el servicio">
-        <figcaption><strong>Ferrari Roma</strong> con varios testigos encendidos y sin poder cambiar los modos de manejo. Se le realiza un diagnóstico en general detectándole solo falta de programación; Además se le realizó su servicio de motor para que continúe en perfectas condiciones.</figcaption>
+        <figcaption><strong>Ferrari Roma</strong> con testigos encendidos y sin poder cambiar los modos de manejo.<br>El diagnóstico detectó falta de programación; se corrigió y se le hizo servicio de motor.</figcaption>
       </figure>
       <figure class="pair">
         <img class="shot" src="img/4.jpg" alt="Lamborghini Urus terminada en Demonios">
         <img class="shot" src="img/8.jpg" alt="Lamborghini Urus durante el servicio">
-        <figcaption><strong>Lamborghini Urus</strong> con varias fallas electrónicas. Se repararon en su mayoría por petición del dueño y se le realizó su servicio mayor de motor.</figcaption>
+        <figcaption><strong>Lamborghini Urus</strong> con varias fallas electrónicas.<br>Se repararon por petición del dueño y se le realizó su servicio mayor de motor.</figcaption>
       </figure>
     </div>
   </div>
