@@ -113,13 +113,13 @@
   }
 
   /* galeria */
-  .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:26px}
-  @media (min-width:700px){.gal{grid-template-columns:repeat(4,1fr);gap:12px}}
+  .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px}
+  @media (min-width:700px){.gal{grid-template-columns:repeat(4,1fr);gap:18px}}
+  /* cada par es una columna: terminado arriba, proceso abajo */
+  .pair{display:grid;grid-template-rows:1fr 1fr;gap:4px;margin:0}
   .shot{
-    aspect-ratio:1/1;background:var(--ink-2);border:1px solid var(--rule);
-    display:flex;align-items:center;justify-content:center;
-    color:var(--dim);font-size:14px;text-align:center;padding:14px;
-    object-fit:cover;
+    display:block;width:100%;aspect-ratio:4/3;object-fit:cover;
+    background:var(--ink-2);border:1px solid var(--rule);
   }
 
   /* visita */
@@ -227,12 +227,24 @@
 <section>
   <div class="wrap">
     <h2 class="sec-title">Trabajos</h2>
-    <p class="sec-intro">Autos que han pasado por el taller.</p>
+    <p class="sec-intro">Cada auto, terminado y durante el trabajo.</p>
     <div class="gal">
-      <div class="shot">Foto del taller</div>
-      <div class="shot">Trabajo terminado</div>
-      <div class="shot">Proceso de reparación</div>
-      <div class="shot">Preparación de motor</div>
+      <figure class="pair">
+        <img class="shot" src="img/1.jpg" alt="Auto terminado en Demonios">
+        <img class="shot" src="img/5.jpg" alt="El mismo auto durante el trabajo en el taller">
+      </figure>
+      <figure class="pair">
+        <img class="shot" src="img/2.jpg" alt="Auto terminado en Demonios">
+        <img class="shot" src="img/6.jpg" alt="El mismo auto durante el trabajo en el taller">
+      </figure>
+      <figure class="pair">
+        <img class="shot" src="img/3.jpg" alt="Auto terminado en Demonios">
+        <img class="shot" src="img/7.jpg" alt="El mismo auto durante el trabajo en el taller">
+      </figure>
+      <figure class="pair">
+        <img class="shot" src="img/4.jpg" alt="Auto terminado en Demonios">
+        <img class="shot" src="img/8.jpg" alt="El mismo auto durante el trabajo en el taller">
+      </figure>
     </div>
   </div>
 </section>
