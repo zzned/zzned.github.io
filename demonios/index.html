@@ -116,7 +116,11 @@
   .gal{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:26px}
   @media (min-width:700px){.gal{grid-template-columns:repeat(4,1fr);gap:18px}}
   /* cada par es una columna: terminado arriba, proceso abajo */
-  .pair{display:grid;grid-template-rows:1fr 1fr;gap:4px;margin:0}
+  .pair{display:grid;grid-template-rows:auto auto auto;gap:4px;margin:0;align-content:start}
+  .pair figcaption{
+    font-size:14.5px;line-height:1.45;color:var(--dim);
+    margin-top:7px;padding-left:9px;border-left:2px solid var(--stamp);
+  }
   .shot{
     display:block;width:100%;aspect-ratio:4/3;object-fit:cover;
     background:var(--ink-2);border:1px solid var(--rule);
@@ -230,20 +234,24 @@
     <p class="sec-intro">Cada auto, terminado y durante el trabajo.</p>
     <div class="gal">
       <figure class="pair">
-        <img class="shot" src="img/1.jpg" alt="Auto terminado en Demonios">
-        <img class="shot" src="img/5.jpg" alt="El mismo auto durante el trabajo en el taller">
+        <img class="shot" src="img/1.jpg" alt="Jetta gris en el taller Demonios">
+        <img class="shot" src="img/5.jpg" alt="Jetta durante la reparación">
+        <figcaption>Jetta con falla de propulsión. El cuerpo de aceleración estaba dañado; se reemplazó y se le hizo servicio preventivo de motor.</figcaption>
       </figure>
       <figure class="pair">
-        <img class="shot" src="img/2.jpg" alt="Auto terminado en Demonios">
-        <img class="shot" src="img/6.jpg" alt="El mismo auto durante el trabajo en el taller">
+        <img class="shot" src="img/2.jpg" alt="Subaru BRZ rojo terminado en Demonios">
+        <img class="shot" src="img/6.jpg" alt="Subaru BRZ durante el trabajo">
+        <figcaption>Descripción del trabajo hecho a este auto. Tómala de su publicación de Facebook.</figcaption>
       </figure>
       <figure class="pair">
-        <img class="shot" src="img/3.jpg" alt="Auto terminado en Demonios">
-        <img class="shot" src="img/7.jpg" alt="El mismo auto durante el trabajo en el taller">
+        <img class="shot" src="img/3.jpg" alt="Ferrari Roma en el taller Demonios">
+        <img class="shot" src="img/7.jpg" alt="Ferrari Roma durante el servicio">
+        <figcaption>Descripción del trabajo hecho a este auto. Tómala de su publicación de Facebook.</figcaption>
       </figure>
       <figure class="pair">
-        <img class="shot" src="img/4.jpg" alt="Auto terminado en Demonios">
-        <img class="shot" src="img/8.jpg" alt="El mismo auto durante el trabajo en el taller">
+        <img class="shot" src="img/4.jpg" alt="Lamborghini Urus terminada en Demonios">
+        <img class="shot" src="img/8.jpg" alt="Lamborghini Urus durante el servicio">
+        <figcaption>Descripción del trabajo hecho a este auto. Tómala de su publicación de Facebook.</figcaption>
       </figure>
     </div>
   </div>
